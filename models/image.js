@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   image.associate = function(models) {
     // associations can be defined here
+    models.image.belongsTo(models.topic)
   };
   return image;
 };

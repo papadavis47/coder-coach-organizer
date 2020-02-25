@@ -14,15 +14,19 @@ There are a multitude of websites such as [code.org](https://code.org) or [houro
 
 My user would be people like myself who are interested in exposing people of all ages to programming principles and would like to create a free account to plan their activities - whether in a homeschool situation - or in an academic or volunteer position. People who are interested in using a tool where they can plan their curriculum, lessons or various notes on the subject. 
 
-### February 22nd and February 23rd
+#### February 22nd and February 23rd
 
 Worked on planning here. No coding. Just wireframes and getting the flow and content clear in my mind. Recieved some inspiration with the idea that I could use this app in my work if I were ever to teach basic coding and scripting to adults in Nicaragua. Worked on understanding all the pieces and figuring out how many different models I will need.
 
-### February 24th
+#### February 24th
 
 Had our first standup today. Solidifying project concepts. Recieved a suggestion from Anna and Sarah to work with the Cloudinary API.
 
 Met with a UX Designer today and that helped. Got some suggestions. I am changing to horizontal navigation instead of vertical for this app. Also, want to continue to clarify user flow.
+
+#### February 25th
+
+Got my models created last night. Setting up controllers and routes today. I want to start on building a few views out if possible and researching Cloudinary.
 
 ### STRETCH GOALS FOR THIS PROJECT
 

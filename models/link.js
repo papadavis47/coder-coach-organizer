@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   link.associate = function(models) {
     // associations can be defined here
+    models.link.belongsTo(models.topic)
   };
   return link;
 };

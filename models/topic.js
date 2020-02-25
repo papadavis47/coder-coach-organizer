@@ -6,6 +6,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   topic.associate = function(models) {
     // associations can be defined here
+    models.topic.hasMany(models.note)
+    models.topic.hasMany(models.image)
+    models.topic.hasMany(models.link)
   };
   return topic;
 };
