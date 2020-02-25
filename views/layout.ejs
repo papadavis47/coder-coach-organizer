@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authentication</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <% if (currentUser) { %>
+            <a href="/auth/logout">Logout</a>
+            <a href="/profile">Profile</a>
+            <%}else {%>
+              <a href="/auth/signup">Signup</a>
+              <a href="/auth/login">Login</a>
+              <%}%>
+            </nav>
+            <h1>Authentication</h1>
+            <% include partials/alerts %>
+          </header class="container">
+      
+      <%- body %>
+    </div>
+    
+  </body>
+  </html>
+  
