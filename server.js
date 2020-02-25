@@ -1,19 +1,18 @@
-require('dotenv').config();
-const express = require('express');
-const ejsLayouts = require('express-ejs-layouts');
-const passport = require('./config/ppConfig');
-const session = require('express-session');
-const flash = require('connect-flash');
-const isLoggedIn = require('./middleware/isLoggedIn');
-const helmet = require('helmet');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const db = require('./models')
+require("dotenv").config();
+const express = require("express");
+const ejsLayouts = require("express-ejs-layouts");
+const passport = require("./config/ppConfig");
+const session = require("express-session");
+const flash = require("connect-flash");
+const isLoggedIn = require("./middleware/isLoggedIn");
+const helmet = require("helmet");
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const db = require("./models");
 const app = express();
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
-
-app.use(require('morgan')('dev'));
+app.use(require("morgan")("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/public"));
 app.use(ejsLayouts);
@@ -22,14 +21,16 @@ app.use(helmet());
 const sessionStore = new SequelizeStore({
   db: db.sequelize,
   expiration: 1000 * 60 * 30
-})
+});
 
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: true,
-  store: sessionStore
-}));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true,
+    store: sessionStore
+  })
+);
 
 sessionStore.sync();
 
@@ -43,19 +44,24 @@ app.use(function(req, res, next) {
   res.locals.currentUser = req.user;
 
   next();
-})
-
-app.get('/', function(req, res) {
-  console.log(`User is ${req.user ? req.user.name : 'not logged in'}`)
-  res.render('index');
 });
 
-app.get('/profile', isLoggedIn, function(req, res) {
-  res.render('profile');
+app.get("/", function(req, res) {
+  console.log(`User is ${req.user ? req.user.name : "not logged in"}`);
+  res.render("index");
 });
 
-app.use('/auth', require('./controllers/auth'));
-app.use('/', isLoggedIn, require('./controllers/test'));
+app.get("/profile", isLoggedIn, function(req, res) {
+  res.render("profile");
+});
+
+app.use("/auth", require("./controllers/auth"));
+app.use("/", isLoggedIn, require("./controllers/test"));
+
+app.use("/topics", require("./controllers/topics"));
+app.use("/notes", require("./controllers/notes"));
+app.use("/images", require("./controllers/images"));
+app.use("/links", require("./controllers/links"));
 
 var server = app.listen(process.env.PORT || 3000);
 

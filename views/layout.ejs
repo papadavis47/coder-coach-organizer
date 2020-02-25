@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Authentication</title>
+    <title>Home</title>
 
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div>
+      <header class="container">
         <nav>
           <% if (currentUser) { %>
             <a href="/auth/logout">Logout</a>
@@ -19,9 +19,8 @@
               <a href="/auth/login">Login</a>
               <%}%>
             </nav>
-            <h1>Authentication</h1>
-            <% include partials/alerts %>
-          </header class="container">
+          </header>
+          <% include partials/alerts %>
       
       <%- body %>
     </div>

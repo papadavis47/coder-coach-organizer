@@ -13,7 +13,17 @@
 }
 
 a {
-    font-size: 18px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    float: right;
+    padding-left: 16px;
 }
+
+h1 {
+  text-align: center;
+}
+
+/* .container {
+  background-color: black;
+} */
