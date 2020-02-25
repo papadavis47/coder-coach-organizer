@@ -6,8 +6,5 @@ module.exports = function(req, res, next) {
     } else {
         next();
     }
-        // send scathing message
-        // redirect to login page
-    // 
-        // carry on
+        
 }
