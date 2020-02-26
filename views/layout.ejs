@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <div>
+    <!-- <div> -->
       <header class="container">
         <nav>
           <% if (currentUser) { %>
             <a href="/auth/logout">Logout</a>
             <a href="/profile">Profile</a>
-            <%}else {%>
+            <a href="/">Home</a>
+          </nav>
+          <%}else {%>
+          <nav>
               <a href="/auth/signup">Signup</a>
               <a href="/auth/login">Login</a>
               <%}%>
@@ -22,7 +25,7 @@
           </header>
           <% include partials/alerts %>
       
-        </div>
+        <!-- </div> -->
         
         <%- body %>
   </body>

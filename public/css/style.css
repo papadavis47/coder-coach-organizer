@@ -3,17 +3,24 @@ body {
 }
 
 .alert {
+  margin: 0 auto;
+  padding-top: 24px;
   border-radius: 10px;
-  box-shadow: 0.1em 0.1em hotpink;
+  box-shadow: 0.1em 0.1em black;
+  font-size: 24px;
   color: white;
+  font-weight: bold;
+  height: 56px;
+  width: 50%;
+  text-align:center;
 }
 
 .red {
   background-color: red;
 }
 
-.green {
-  background-color: green;
+.black {
+  background-color: black;
 }
 
 a {
@@ -22,6 +29,7 @@ a {
     font-weight: bold;
     padding-left: 16px;
     color: white;
+    text-decoration: none;
     
     
 }
@@ -38,4 +46,5 @@ h1 {
  .container {
   background-color: black;
   height: 100px;
+  margin-bottom: 48px;
 } 
