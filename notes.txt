@@ -46,3 +46,24 @@ FINISHED PROJECT
     - Controller system that allows the user to go to multiple routes
     - A way to authorize users so that they log in and out, and stay logged in through use
     - Views: edited pages that give the user visual cues of how interact with our website
+
+    ---------------------------------------------------------------------------------------------
+
+    Here is some code I will not use now, but will use later.
+
+    router.get("/:id/notes", (req, res) => {
+  res.render("topics/notes.ejs");
+});
+
+// This will display a particular topic and any links that are connected to it
+
+router.get("/:id/links", (req, res) => {
+  res.render("topics/links");
+});
+
+// This will display a particular topic and any images that are connected to it
+
+
+router.get("/:id/images", (req, res) => {
+  res.render("topics/images");
+});
