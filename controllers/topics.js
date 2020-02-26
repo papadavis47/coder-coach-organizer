@@ -20,9 +20,14 @@ router.get("/:id/notes", (req, res) => {
   res.render("topics/notes.ejs");
 });
 
+// This will display a particular topic and any links that are connected to it
+
 router.get("/:id/links", (req, res) => {
   res.render("topics/links");
 });
+
+// This will display a particular topic and any images that are connected to it
+
 
 router.get("/:id/images", (req, res) => {
   res.render("topics/images");

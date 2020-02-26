@@ -1,3 +1,7 @@
+body {
+  margin: 0 auto;
+}
+
 .alert {
   border-radius: 10px;
   box-shadow: 0.1em 0.1em hotpink;
@@ -16,14 +20,22 @@ a {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    float: right;
     padding-left: 16px;
+    color: white;
+    
+    
 }
 
 h1 {
   text-align: center;
+  margin-top: 100px;
 }
 
-/* .container {
+ nav {
+  padding-top: 24px;
+} 
+
+ .container {
   background-color: black;
-} */
+  height: 100px;
+} 
