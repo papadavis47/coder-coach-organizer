@@ -40,7 +40,7 @@ router.post('/new', function(req, res) {
 // This will display a particular topic 
 
 router.get("/:id", (req, res) => {
-  res.render("topics/show.ejs");
+  res.render("topics/show");
 })
 
 

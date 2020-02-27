@@ -28,6 +28,10 @@ Met with a UX Designer today and that helped. Got some suggestions. I am changin
 
 Got my models created last night. Setting up controllers and routes today. I want to start on building a few views out if possible and researching Cloudinary.
 
+#### February 26th - Wednesday
+
+I made some good progress today on building the controllers for functionality in the various views. Also, working with ejs templates. Will learn more about Cloudinary tonight. Good progress today. I feel good about leaving school today and working on it at home. Just keep working and do not give up.
+
 ### STRETCH GOALS FOR THIS PROJECT
 
 Add more than one api. Possibly work with the YouTube API. Possibly work with the Github API in some way or New York Times API.
