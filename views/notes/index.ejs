@@ -1,1 +1,16 @@
-<h2>Show all notes of a particular user</h2>
+<h1>Your Saved Notes</h1>
+
+<% notes.forEach(function(note) { %>
+    <div>
+        <h1>
+            <a href="/notes/<%= note.userId %>">
+             <%= note.content %> 
+            </a>
+        </h1>
+    </div>
+    
+<% }) %>
+
+<hr>
+
+<a href="/profile">Back to Profile</a>

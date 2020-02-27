@@ -1,1 +1,16 @@
-<h1>This will display all the topics for a particular user.</h1>
+<h1>Your Saved Topics</h1>
+
+<% topics.forEach(function(topic) { %>
+    <div>
+        <h1>
+            <a href="/topics/<%= topic.userId %>">
+             <%= topic.name %> 
+            </a>
+        </h1>
+    </div>
+    
+<% }) %>
+
+<hr>
+
+<a href="/profile">Back to Profile</a>

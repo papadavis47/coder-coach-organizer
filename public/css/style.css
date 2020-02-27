@@ -28,7 +28,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 16px;
-    color: white;
+    color: red;
     text-decoration: none;
     
     
@@ -48,3 +48,8 @@ h1 {
   height: 100px;
   margin-bottom: 48px;
 } 
+
+
+.black {
+  color: black;
+}
