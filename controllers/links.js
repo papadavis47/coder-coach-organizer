@@ -29,7 +29,8 @@ router.post("/new", function(req, res) {
   db.link
     .create({
       href: req.body.href,
-      userId: req.body.userId
+      userId: req.body.userId,
+      topicId: req.body.topic
     })
     .then(function(link) {
       res.redirect("/links");

@@ -8,7 +8,7 @@
     <label for="topics">Add to topic:</label>
   <select id="topics" name="topic">
      <% topics.forEach(function(topic) { %>
-          <option value="<%= topic.name %>"><%= topic.name %></option>
+          <option value="<%= topic.id %>"><%= topic.name %></option>
 
     <%  }) %>
   </select>

@@ -31,7 +31,8 @@ router.get("/new", (req, res) => {
 router.post('/new', function(req, res) {
   db.note.create({
     content: req.body.content,
-    userId: req.body.userId
+    userId: req.body.userId,
+    topicId: req.body.topic
   })
   .then(function(note) {
     res.redirect('/notes')
