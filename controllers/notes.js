@@ -54,7 +54,7 @@ router.get('/:id/edit', function(req, res) {
 
 
 
-// This is the PUT route to send updated not to db
+// This is the PUT route to send updated note to database
 router.put("/:id/edit", (req, res) => {
   db.note.findOne({
     where: { id: req.params.id }
