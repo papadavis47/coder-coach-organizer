@@ -19,7 +19,11 @@ router.get("/", (req, res) => {
 // This will show form for a new note
 
 router.get("/new", (req, res) => {
-  res.render("notes/new");
+  db.topic.findAll().
+  then(function(topics) {
+    res.render("notes/new", { topics });
+
+  })
 });
 
 // This creates a new note
@@ -55,6 +59,7 @@ router.get('/:id/edit', function(req, res) {
 
 
 // This is the PUT route to send updated note to database
+
 router.put("/:id/edit", (req, res) => {
   db.note.findOne({
     where: { id: req.params.id }
@@ -64,6 +69,19 @@ router.put("/:id/edit", (req, res) => {
     note.save().then(function() {
       res.redirect("/notes")
     })
+  })
+
+});
+
+
+// This is to delete a particular note
+
+router.delete("/:id", (req, res) => {
+  db.note.destroy({
+    where: { id: req.params.id }
+  })
+  .then(function(note) {
+      res.redirect("/notes")
   })
 
 });

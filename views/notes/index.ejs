@@ -8,6 +8,9 @@
             </a>
         </h1>
     </div>
+    <form method="POST" action="/notes/<%= note.id %>/?_method=DELETE">
+        <input type="submit" value="Delete">
+    </form>
     
 <% }) %>
 

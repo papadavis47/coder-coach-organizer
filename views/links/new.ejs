@@ -1,9 +1,18 @@
 <h1>Paste a New Link Here:</h1>
 
 <div class="form">
-<form action="/links/new" method="POST">
+  <form action="/links/new" method="POST">
     <label for="links">Paste Into Box:</label>
-    <input type="text" id="href" name="href">
-    <input type="submit" class="btn">
-</form>
+    <input type="text" id="href" name="href" />
+
+    <label for="topics">Add to topic:</label>
+    <select id="topics" name="topic">
+      <% topics.forEach(function(topic) { %>
+      <option value="<%= topic.name %>"><%= topic.name %></option>
+
+      <% }) %>
+    </select>
+    
+    <input type="submit" class="btn" />
+  </form>
 </div>

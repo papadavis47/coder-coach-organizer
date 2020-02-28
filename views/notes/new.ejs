@@ -5,6 +5,14 @@
 
     <textarea name="content" id="content" cols="50" rows="20"></textarea>
 
+    <label for="topics">Add to topic:</label>
+  <select id="topics" name="topic">
+     <% topics.forEach(function(topic) { %>
+          <option value="<%= topic.name %>"><%= topic.name %></option>
+
+    <%  }) %>
+  </select>
+
     <input type="submit" class="btn">
 </form>
 </div>
