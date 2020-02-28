@@ -40,4 +40,17 @@ router.post("/new", function(req, res) {
     });
 });
 
+
+// This is to delete a particular link
+
+router.delete("/:id", (req, res) => {
+  db.link.destroy({
+    where: { id: req.params.id }
+  })
+  .then(function(note) {
+      res.redirect("/links")
+  })
+
+});
+
 module.exports = router;

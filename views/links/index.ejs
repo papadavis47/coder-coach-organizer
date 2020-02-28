@@ -8,7 +8,9 @@
             <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
         </h1>
     </div>
-    
+    <form method="POST" action="/links/<%= link.id %>/?_method=DELETE">
+        <input type="submit" value="Delete">
+    </form>
 <% }) %>
 
 <hr>
