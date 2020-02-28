@@ -40,9 +40,27 @@ router.post('/new', function(req, res) {
 // This will display a particular topic 
 
 router.get("/:id", (req, res) => {
-  res.render("topics/show");
+  let topicChoice = req.params.id;
+  db.topic.findOne({
+    where: {id: topicChoice}
+  })
+//   db.link.findAll({
+//     where: { topicId: topicChoice }
+//   })
+//   db.note.findAll({
+//     where: { topicId: topicChoice }
+//   })
+//   res.render("topics/show", { topic: topic, links: links, notes: notes})
+
+// })
+.then(function(topic) {
+  topic.getLinks().then(links =>{
+    topic.getNotes().then(notes =>{
+      res.render("topics/show", {topic: topic, links: links, notes: notes})
+    })
+  })
 })
 
-
+})
 
 module.exports = router;

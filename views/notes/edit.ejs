@@ -1,1 +1,9 @@
-<h2>Here is where I will edit a note.</h2>
+<h2>You can edit your note here:</h2>
+
+<div class="form">
+  <form action="/notes/<%= note.id %>/edit/?_method=PUT" method="POST">
+    <textarea name="content" id="content" cols="50" rows="20"><%= note.content %></textarea>
+
+    <input type="submit" class="btn" />
+  </form>
+</div>

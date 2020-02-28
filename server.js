@@ -6,33 +6,37 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const isLoggedIn = require("./middleware/isLoggedIn");
 const helmet = require("helmet");
-const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const methodOverride = require('method-override');
+
+// const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const db = require("./models");
 const app = express();
 
 app.set("view engine", "ejs");
 
 app.use(require("morgan")("dev"));
+app.use(methodOverride('_method'));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/public"));
 app.use(ejsLayouts);
 app.use(helmet());
 
-const sessionStore = new SequelizeStore({
-  db: db.sequelize,
-  expiration: 1000 * 60 * 30
-});
+// const sessionStore = new SequelizeStore({
+//   db: db.sequelize,
+//   expiration: 1000 * 60 * 30
+// });
 
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
-    store: sessionStore
+    // store: sessionStore
   })
 );
 
-sessionStore.sync();
+// sessionStore.sync();
 
 app.use(passport.initialize());
 app.use(passport.session());

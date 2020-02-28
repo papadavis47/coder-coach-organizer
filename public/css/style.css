@@ -8,7 +8,7 @@ body {
   border-radius: 10px;
   box-shadow: 0.1em 0.1em black;
   font-size: 24px;
-  color: red;
+  color: whitesmoke;
   font-weight: bold;
   height: 56px;
   width: 50%;
@@ -17,6 +17,10 @@ body {
 
 .red {
   background-color: blue;
+}
+
+.green {
+  background-color: green;
 }
 
 .black {
@@ -50,6 +54,8 @@ h1 {
 } 
 
 
-.black {
-  color: black;
+/* ------------------------------------ For Test Stuff Here ------------------------- */
+.test1 {
+  margin-bottom: 100px;
 }
+

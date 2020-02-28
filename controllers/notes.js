@@ -22,6 +22,8 @@ router.get("/new", (req, res) => {
   res.render("notes/new");
 });
 
+// This creates a new note
+
 router.post('/new', function(req, res) {
   db.note.create({
     content: req.body.content,
@@ -35,9 +37,35 @@ router.post('/new', function(req, res) {
   })
 })
 
+// This is where I get the form with content to update a note
 
-router.get("/:id/edit", (req, res) => {
-  res.render("notes/edit.ejs");
+router.get('/:id/edit', function(req, res) {
+  db.note.findOne({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then(function(note) {
+    res.render("notes/edit", { note: note });
+
+  })
+
+})
+
+
+
+// This is the PUT route to send updated not to db
+router.put("/:id/edit", (req, res) => {
+  db.note.findOne({
+    where: { id: req.params.id }
+  })
+  .then(function(note) {
+    note.content = req.body.content
+    note.save().then(function() {
+      res.redirect("/notes")
+    })
+  })
+
 });
 
 module.exports = router;

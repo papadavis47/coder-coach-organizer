@@ -1,0 +1,16 @@
+<h1>Your Saved Links List:</h1>
+
+
+
+<% links.forEach(function(link) { %>
+    <div>
+        <h1>
+            <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
+        </h1>
+    </div>
+    
+<% }) %>
+
+<hr>
+
+<a href="/profile">Back to Profile</a>
