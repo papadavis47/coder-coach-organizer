@@ -2,9 +2,10 @@ var express = require("express");
 var db = require("../models");
 var router = express.Router();
 
+// GET - This will get and render a list of links
 
 router.get('/', (req, res) => {
-    // res.send("List of links here.")
+
     db.link.findAll()
     .then(function(links) {
         res.render("links/index", { links: links })
@@ -14,12 +15,14 @@ router.get('/', (req, res) => {
     })
 });
 
+// GET - This will render a form to create a new link
+
 router.get('/new', (req, res) => {
     res.render("links/new")
 })
 
 
-// This will post information from a link entry form
+// POST - This will post a link to db from link creation form
 
 router.post('/new', function(req, res) {
     db.link.create({
@@ -33,5 +36,7 @@ router.post('/new', function(req, res) {
       res.status(400).render('main/404')
     })
   })
+
+  
 
 module.exports = router;
