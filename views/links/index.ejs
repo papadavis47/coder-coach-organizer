@@ -3,13 +3,13 @@
 
 
 <% links.forEach(function(link) { %>
-    <div>
-        <h1>
+    <div class="center-align">
+        <p>
             <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
-        </h1>
+        </p>
     </div>
     <form method="POST" action="/links/<%= link.id %>/?_method=DELETE">
-        <input type="submit" value="Delete">
+        <input class="btn" type="submit" value="Delete">
     </form>
 <% }) %>
 

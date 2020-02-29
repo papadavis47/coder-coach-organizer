@@ -1,6 +1,4 @@
-body {
-  margin: 0 auto;
-} 
+
 
 .alert {
   margin: 0 auto;
@@ -23,39 +21,37 @@ body {
   background-color: green;
 }
 
-.black {
-  background-color: black;
-}
-
-a {
+/* a {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding-left: 16px;
     color: red;
     text-decoration: none;
-    
-    
 }
+ */
 
-h1 {
-  text-align: center;
-  margin-top: 100px;
-}
-
- nav {
-  padding-top: 24px;
-} 
-
- .container {
-  background-color: black;
-  height: 100px;
-  margin-bottom: 48px;
-} 
-
-
-/* ------------------------------------ For Test Stuff Here ------------------------- */
- .test1 {
-  margin-bottom: 100px;
-}
- 
+ * {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+ html,
+ body {
+  height: 100%;
+  position: relative;
+ }
+ .main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+ }
+ footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
