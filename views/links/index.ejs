@@ -1,18 +1,18 @@
-<h1>Your Saved Links List:</h1>
-
-
+<h2>Your Saved Links List:</h2>
 
 <% links.forEach(function(link) { %>
-    <div class="center-align">
-        <p>
-            <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
-        </p>
-    </div>
-    <form method="POST" action="/links/<%= link.id %>/?_method=DELETE">
-        <input class="btn" type="submit" value="Delete">
-    </form>
+<div class="center-align container">
+  <p>
+    <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
+  </p>
+</div>
+<div class="container">
+  <form method="POST" action="/links/<%= link.id %>/?_method=DELETE">
+    <input class="btn" type="submit" value="Delete" />
+  </form>
+</div>
 <% }) %>
 
-<hr>
+<hr />
 
-<a href="/profile">Back to Profile</a>
+<p><a href="/profile">Back to Profile</a></p>

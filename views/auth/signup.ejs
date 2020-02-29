@@ -1,18 +1,21 @@
+<% include ../partials/motto %>
+
 <form action="/auth/signup" method="POST">
-  <div>
+  <div class="container">
     <label for="authEmail">Email</label>
     <input id="authEmail" type="email" name="email">
   </div>
 
-  <div>
+  <div class="container">
     <label for="authName">Name</label>
     <input id="authName" type="text" name="name">
   </div>
 
-  <div>
+  <div class="container">
     <label for="authPassword">Password</label>
     <input id="authPassword"  type="password" name="password">
   </div>
-
+<div class="container">
   <input class="btn btn-primary" type="submit">
+</div>
 </form>

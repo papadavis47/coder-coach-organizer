@@ -1,12 +1,12 @@
-<h1>Your Saved Topics</h1>
+<h2 class="center-align">Your Saved Topics</h2>
 
 <% topics.forEach(function(topic) { %>
-    <div>
-        <h3>
+    <div class="container">
+        <h4>
             <a href="/topics/<%= topic.id %>">
              <%= topic.name %> 
             </a>
-        </h3>
+        </h4>
     </div>
     
 <% }) %>

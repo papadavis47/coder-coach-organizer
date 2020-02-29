@@ -1,9 +1,10 @@
 <h2>You can edit your note here:</h2>
 
-<div class="form">
+<div class="form container">
   <form action="/notes/<%= note.id %>/edit/?_method=PUT" method="POST">
     <textarea name="content" id="content" cols="50" rows="20"><%= note.content %></textarea>
-
+<div class="container">
     <input type="submit" class="btn" />
+  </div>
   </form>
 </div>

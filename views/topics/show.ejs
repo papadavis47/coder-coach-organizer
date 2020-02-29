@@ -1,4 +1,4 @@
-<h1><%= topic.name %></h1>
+<h2><%= topic.name %></h2>
 
 
 
@@ -6,7 +6,7 @@
 
 <% if(links) { %>
   <% links.forEach(function(link) { %>
-    <div>
+    <div class="container">
       <h3>
         <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
       </h3>
@@ -23,7 +23,7 @@
 
 <% if (notes) { %>
     <% notes.forEach(function(note) { %>
-        <div>
+        <div class="container">
             <h3>
                 <a href="/notes/<%= note.id %>">
                  <%= note.content %> 
