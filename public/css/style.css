@@ -17,7 +17,7 @@
   }
 
   p {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .main-container {
@@ -36,18 +36,19 @@
   }
   
   .alert {
+    margin-top: 24px;
     border-radius: 10px;
     box-shadow: 0.1em 0.1em black;
-    font-size: 24px;
+    font-size: 20px;
     color: whitesmoke;
     font-weight: bold;
-    height: 56px;
+    height: 48px;
     width: 50%;
     text-align:center;
   }
   
   .red {
-    background-color: blue;
+    background-color: red;
   }
   
   .green {
@@ -55,8 +56,8 @@
   }
 
   .motto {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   
