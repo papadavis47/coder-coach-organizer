@@ -6,13 +6,14 @@
     <input type="text" id="href" name="href" />
 
     <label for="topics">Add to topic:</label>
-    <select id="topics" name="topic">
-      <% topics.forEach(function(topic) { %>
-      <option value="<%= topic.id %>"><%= topic.name %></option>
+    <div class="input-field">
+      <select class="browser-default" id="topics" name="topic">
+        <% topics.forEach(function(topic) { %>
+        <option value="<%= topic.id %>"><%= topic.name %></option>
 
-      <% }) %>
-    </select>
-    
+        <% }) %>
+      </select>
+    </div>
     <input type="submit" class="btn" />
   </form>
 </div>

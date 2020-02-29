@@ -2,7 +2,7 @@
 
 <div class="form container">
   <form action="/notes/<%= note.id %>/edit/?_method=PUT" method="POST">
-    <textarea name="content" id="content" cols="50" rows="20"><%= note.content %></textarea>
+    <textarea id="textarea1" class="materialize-textarea" name="content" id="content" cols="50" rows="20"><%= note.content %></textarea>
 <div class="container">
     <input type="submit" class="btn" />
   </div>

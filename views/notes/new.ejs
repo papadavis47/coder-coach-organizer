@@ -3,16 +3,17 @@
 <div class="form">
 <form action="/notes/new" method="POST">
 
-    <textarea name="content" id="content" cols="50" rows="20"></textarea>
+    <textarea id="textarea1" class="materialize-textarea" name="content" id="content" cols="50" rows="20"></textarea>
 
     <label for="topics">Add to topic:</label>
-  <select id="topics" name="topic">
+    <div class="input-field">
+  <select class="browser-default" id="topics" name="topic">
      <% topics.forEach(function(topic) { %>
           <option value="<%= topic.id %>"><%= topic.name %></option>
 
     <%  }) %>
   </select>
-
+</div>
     <input type="submit" class="btn">
 </form>
 </div>

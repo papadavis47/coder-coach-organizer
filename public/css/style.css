@@ -39,21 +39,15 @@
     margin-top: 24px;
     border-radius: 10px;
     box-shadow: 0.1em 0.1em black;
-    font-size: 20px;
+    font-size: 16px;
     color: whitesmoke;
     font-weight: bold;
     height: 48px;
-    width: 50%;
-    text-align:center;
+    width: 40%;
+    
   }
   
-  .red {
-    background-color: red;
-  }
   
-  .green {
-    background-color: green;
-  }
 
   .motto {
     margin-top: 32px;
@@ -61,4 +55,6 @@
   }
 
   
-
+label {
+  font-size: 24px;
+}
