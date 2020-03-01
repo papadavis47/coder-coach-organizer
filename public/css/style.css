@@ -13,12 +13,17 @@
   body {
     height: 100%;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
   }
 
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
 
   .main-container {
     /* min-height: 100vh; will cover the 100% of viewport */
@@ -33,17 +38,25 @@
     bottom: 0;
     width: 100%;
     padding:2px;
+    margin-top: 12px;
   }
   
   .alert {
     margin-top: 24px;
     border-radius: 10px;
     box-shadow: 0.1em 0.1em black;
-    font-size: 16px;
+    font-size: 14px;
     color: whitesmoke;
     font-weight: bold;
-    height: 48px;
+    height: 50px;
     width: 40%;
+    
+  }
+
+  .block {
+    display: inline;
+    margin-left: 30px;
+    font-size: 24px;
     
   }
   
@@ -54,7 +67,11 @@
     margin-bottom: 32px;
   }
 
+  .header {
+    margin-bottom: 32px;
+  }
+
   
 label {
-  font-size: 24px;
+  font-size: 20px;
 }
