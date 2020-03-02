@@ -3,7 +3,7 @@ const db = require("../models");
 const router = express.Router();
 const cloudinary = require('cloudinary');
 const multer = require('multer');
-const upload = multer({ dest: '../uploads'});
+const upload = multer({ dest: 'app/uploads'});
 
 
 router.get('/', (req, res) => {
