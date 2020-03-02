@@ -1,6 +1,6 @@
-var express = require("express");
-var db = require("../models");
-var router = express.Router();
+const express = require("express");
+const db = require("../models");
+const router = express.Router();
 
 // GET - This will get and render a list of links
 

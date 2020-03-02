@@ -5,8 +5,8 @@ const passport = require("./config/ppConfig");
 const session = require("express-session");
 const flash = require("connect-flash");
 const isLoggedIn = require("./middleware/isLoggedIn");
-var cloudinary = require('cloudinary');
-var multer = require('multer');
+const cloudinary = require('cloudinary');
+const multer = require('multer');
 const helmet = require("helmet");
 const methodOverride = require('method-override');
 

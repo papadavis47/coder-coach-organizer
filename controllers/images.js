@@ -1,6 +1,8 @@
-var express = require("express");
-var db = require("../models");
-var router = express.Router();
+const express = require("express");
+const db = require("../models");
+const router = express.Router();
+const cloudinary = require('cloudinary');
+const multer = require('multer');
 
 
 router.get('/', (req, res) => {
