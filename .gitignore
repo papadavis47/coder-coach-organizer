@@ -3,7 +3,7 @@
 # Created by https://www.gitignore.io/api/node,osx,linux
 
 # This is from multer, cloudinary
-uploads
+
 
 ### Node ###
 # Logs
