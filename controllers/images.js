@@ -9,4 +9,9 @@ router.get('/', (req, res) => {
     res.send("Display of images here.")
 })
 
+
+router.get('/new', (req, res) => {
+    res.render("images/new");
+})
+
 module.exports = router;
