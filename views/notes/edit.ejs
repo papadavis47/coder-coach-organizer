@@ -1,9 +1,9 @@
-<h2>You can edit your note here:</h2>
+<h3>Edit Your Note Here:</h3>
 
-<div class="form container">
+<div class="form">
   <form action="/notes/<%= note.id %>/edit/?_method=PUT" method="POST">
     <textarea id="textarea1" class="materialize-textarea" name="content" id="content" cols="50" rows="20"><%= note.content %></textarea>
-<div class="container">
+<div>
     <input type="submit" class="btn" />
   </div>
   </form>

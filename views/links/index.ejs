@@ -1,12 +1,12 @@
-<h2>Your Saved Links List:</h2>
+<h3>Your Saved Links List:</h3>
 
 <% links.forEach(function(link) { %>
-<div class="center-align container">
+<div class="center-align">
   <p>
     <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
   </p>
 </div>
-<div class="container">
+<div>
   <form method="POST" action="/links/<%= link.id %>/?_method=DELETE">
     <input class="btn" type="submit" value="Delete" />
   </form>

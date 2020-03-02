@@ -1,38 +1,42 @@
-<h2><%= topic.name %></h2>
+<h4><%= topic.name %></h4>
 
 
 
-<h2>Links</h2>
+<h4>Links</h4>
 
 <% if(links) { %>
   <% links.forEach(function(link) { %>
     <div class="container">
-      <h3>
+      <h5>
         <a href="<%= link.href %>" target="_blank"><%= link.href %></a>
-      </h3>
+      </h5>
     </div>
   <% }) %>
 <% } else { %>
-  <h3>No links yet.</h3>
+  <h4>No links yet.</h4>
 <% } %>
 
 <hr>
 
 
-<h2>Notes</h2>
+<h4>Notes</h4>
 
 <% if (notes) { %>
     <% notes.forEach(function(note) { %>
         <div class="container">
-            <h3>
+            <h5>
                 <a href="/notes/<%= note.id %>/edit">
                  <%= note.content %> 
                 </a>
-            </h3>
+            </h5>
         </div>
         
     <% }) %>
 
 <% } %>
+
+<hr>
+
+<h4>Images</h4>
 
 <hr>
