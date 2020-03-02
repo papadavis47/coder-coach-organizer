@@ -2,10 +2,18 @@
 
 # coderCoachOrganizer
 
+#### Sign In Page
+----------------------------------------------------
 ![Screenshot Main](/public/img/screenshot-main.png)
+
+____________________________________________________________________________________________________
+
+#### Create a New Note
+------------------------------------------------
+
 ![Screenshot Main](/public/img/screenshot-main2.png)
 
-
+--------------------------------------------------------
 
 ### THE PROBLEM
 
@@ -90,3 +98,12 @@ Make it so people can watch YouTube videos in app browser window.
 
 Find a way that people can write in markdown - like on Github or stackoverflow - if they choose to. Code snippets. And all the rest of what markdown provides.
 
+# External Sources
+
+* [Materialize CSS](https://materializecss.com/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Treehouse](https://www.teamtreehouse.com)
+
+## Inspiration
+
+* [Simple Note](https://simplenote.com/)
