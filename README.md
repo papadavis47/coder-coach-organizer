@@ -108,4 +108,4 @@ Styled with Materialize CSS and worked on implementing image uploads with Cloudi
 
 ## Inspiration
 
-* [Simple Note](https://simplenote.com/)
+* [SimpleNote](https://simplenote.com/)
