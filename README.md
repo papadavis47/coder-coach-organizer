@@ -92,11 +92,13 @@ Styled with Materialize CSS and worked on implementing image uploads with Cloudi
 
 ### STRETCH GOALS FOR THIS PROJECT
 
-Add more than one api. Possibly work with the YouTube API. Possibly work with the Github API in some way or New York Times API. So that a user can search for, find, and save articles to their profile using a articles model.
+* Add more than one api. Possibly work with the YouTube API. Possibly work with the Github API in some way or New York Times API. 
 
-Make it so people can watch YouTube videos in app browser window.
+* I would like it if a user could search for, find, and save articles or videos to their profile using an articles model and/or a videos model.
 
-Find a way that people can write in markdown - like on Github or stackoverflow - if they choose to. Code snippets. And all the rest of what markdown provides.
+* Make it so people can watch YouTube videos in app browser window.
+
+* Find a way that people can write in markdown - like on Github or stackoverflow - if they choose   to. Code snippets. And all the rest of what markdown provides.
 
 # External Sources
 
