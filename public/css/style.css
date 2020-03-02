@@ -34,6 +34,9 @@
     margin-top: 12px;
   }
 
+  label {
+    font-size: 20px;
+  }
 
   
   .alert {
@@ -75,6 +78,4 @@
     font-style: italic;
   }
   
-label {
-  font-size: 20px;
-}
+
