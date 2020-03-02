@@ -62,7 +62,6 @@ app.get("/profile", isLoggedIn, function(req, res) {
 });
 
 app.use("/auth", require("./controllers/auth"));
-app.use("/", isLoggedIn, require("./controllers/test"));
 
 app.use("/topics", require("./controllers/topics"));
 app.use("/notes", require("./controllers/notes"));
