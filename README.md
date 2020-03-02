@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 ### THE PROBLEM
 
-When a computer club coach  is preparing a lesson plan, deciding on resources to use, choosing activities for club members - it is often difficult to organize the information, and keep the information organized during the club meetings. The coach would be well served by single place to put a YouTube playlist, notes that he/she can refer to, and even images to work with - that they can then show and/or use to help engage their class/club members. 
+When a computer club coach  is preparing a lesson plan, deciding on resources to use, choosing activities for club members - it is often difficult to organize the information. And it is a challenge to keep the information organized during the club meetings. The coach would be well served by a single place to put a YouTube playlist, notes that he/she can refer to, and even images to work with - that they can then show and/or use to help engage their class/club members. 
 
 ### SOLUTION APP DELIVERS
 
@@ -26,7 +26,7 @@ There are a multitude of websites such as [code.org](https://code.org) or [houro
 
 ### USER
 
-My user would be people like myself who are interested in exposing people of all ages to programming principles and would like to create a free account to plan their activities - whether in a homeschool situation - or in an academic or volunteer position. People who are interested in using a tool where they can plan their curriculum, lessons or various notes on the subject. 
+My user would be people like myself who are interested in exposing people of various ages to basic programming principles. It would be nice to create a free account to plan activities - whether in a homeschool situation - or in an academic or volunteer position. This app is for coaches/tutors who are interested in using a tool where they can plan their curriculum or lessons - much like an electronic notebook.
 
 # Initial Wire Frames
 
